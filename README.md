@@ -1,6 +1,6 @@
 # Launch Countdown Timer ⌛
 
-This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef).
+This is a solution to the [Launch Countdown Timer on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-).
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
