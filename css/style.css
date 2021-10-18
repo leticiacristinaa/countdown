@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+:root {
+  --clr-grayishBlue: hsl(237, 18%, 59%);
+  --clr-softRed: hsl(345, 95%, 68%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-darkBlue: hsl(236, 21%, 26%);
+  --clr-veryDarkBlue: hsl(235, 16%, 14%);
+  --clr-veryDark: hsl(234, 17%, 12%);
+  --ff-primary: "Red Hat Text", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--ff-primary);
+  background: var(--clr-veryDark);
+  background-image: url(/images/bg-stars.svg);
+}
+
+.container{
+  height: 100vh;
+}
+
+.title-container{
+  min-height: 25vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.title-container .title{
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--clr-white);
+}
+
+.timer-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  min-height: 40vh;
+  margin: 10vh 1em 0 1em;
+}
+
+.timer-card{
+  height: 65px;
+  width: 65px;
+  position: relative;
+  padding-bottom: 0.72em;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  line-height: 0.95;
+  border-radius: 5px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--clr-darkBlue);
+}
+
+.timer-item{
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  color: var(--clr-softRed);
+}
+
+.aling{
+  text-align: center;
+}
+
+.timer-item-description{
+  color: var(--clr-grayishBlue);
+  font-size: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+
+.card__top,
+.card__bottom{
+  display: block;
+  height: 0.72em;
+  color: var(--clr-softRed);
+  background: var(--clr-darkBlue);
+  padding: 0.25em 0.25em;
+  border-radius: 0.15em 0.15em 0 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  width: 1.8em;
+  transform: translateZ(0);
+  border-bottom-right-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
+  border: 1px solid yellow;
+}
+
+.card__bottom {
+  color: var(--clr-softRed);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: var(--clr-darkBlue);
+  border-radius: 0 0 0.15em 0.15em;
+  pointer-events: none;
+  overflow: hidden;
+  border-top-right-radius: 0.2em;
+  border-top-left-radius: 0.2em;
+  border: 1px solid blue;
+}
+
+
+  /* .timer-item p{
+    margin-top: 15px;
+    font-size: 8px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: hsl(237, 18%, 59%);
+  } */
+
+
+footer{
+  min-height: 25vh;
+  background-image: url("/images/pattern-hills.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--clr-grayishBlue);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  color: var(--clr-grayishBlue);
+  font-size: 2em;
+}
+
+.social-icons a:hover{
+  color: var(--clr-softRed);
+  transform: scale(1.2);
+  transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+a + a {
+  margin-left: 1em;
+}
+
+@media only screen and (min-width: 800px) {
+
+  .content{
+    display: flex;
+    justify-content: center;
+  }
+
+  .timer-content{
+   width: 50%;
+  }
+
+  .timer-card{
+    height: 130px;
+    width: 130px;
+    font-size: 4em;
+    box-shadow: 0px 8px 4px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .timer-item{
+    top: 25%;
+    right: 20%;
+  }
+
+  .timer-item-description{
+    font-size: 0.8em;
+  }
+
+}
+
