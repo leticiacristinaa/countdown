@@ -33,7 +33,7 @@ Your users should be able to:
 
 ### Links
 
-- Live Site URL: [Here 🌐](https://leticiacristinaa.github.io/contdown/)
+- Live Site URL: [Here 🌐](https://leticiacristinaa.github.io/countdown/)
 
 ## My process
 
